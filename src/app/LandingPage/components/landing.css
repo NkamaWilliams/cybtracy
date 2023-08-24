@@ -89,16 +89,39 @@ color: #fff;
     gap: 1rem;
 }
 .image-slider {
-  
+  position: relative;
+
   }
+  .slider-background{
+    /* position: absolute; */
+    z-index: -10;
+  }
+
   
   .slider-image {
+    position: absolute;
     
     /* object-fit: cover;  */
     transition: opacity 1s ease; 
   }
   .type{
-    height: 6rem;
-    width: 0.4rem;
+    height: 7rem;
+    width: 0.2rem;
     background-color: #333;
+    transition: opacity 2s;
+    animation: blink infinite  1s ;
+    /* animation-timing-function: steps(40, end) */
+  }
+
+
+
+  @keyframes blink{
+
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
   }

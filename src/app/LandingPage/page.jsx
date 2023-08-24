@@ -1,5 +1,5 @@
 
-import LandingText from './components/LandingText'
+import LandingText from './components/LandingText.tsx'
 import LandingComment from './components/LandingComment'
 import landingImage1 from './Images/landingImage2.png'
 import ImgeComponent from './components/ImgeComponent'
