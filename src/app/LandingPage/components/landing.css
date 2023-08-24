@@ -1,0 +1,104 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap'); 
+/* @import '../../Styles/font.css'; */
+
+.landing-comment_main-container{
+   display: inline-block;
+}
+.landing-text_container{
+    display: flex;
+    background-color: #55C396;
+    padding: 1rem 2rem;
+    gap: 3rem;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+}
+.landing-text_container .line, .landing-text_container .line-2{
+    height: 4rem;
+    width: 1.2px;
+    background-color: #fff;
+}
+.landing-text_container .text{
+    color: var(--foundation-white-w-75, #FDFDFD);
+
+/* font-family: 'Dangrek'; */
+font-size: 2.5rem;
+font-style: normal;
+font-family:'Dangrek';
+ /* 37.2px */
+}
+.landing-text_container .comment{
+    color: var(--foundation-white-w-75, #FDFDFD);
+    font-family: 'Quicksand';
+
+/* Body/small/Bold */
+font-size: 1.3rem;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+}
+
+.landing-header_container .text-land{
+    color: var(--foundation-black-b-300, #333);
+
+/* FHeading/H1 */
+font-family: 'Dangrek';
+font-size: 5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 84px */
+}
+.landing-header-2{
+    color: var(--foundation-black-b-300, #333);
+/* Body/Large/Regular */
+margin-top: -1rem;
+font-family: 'Quicksand';
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 139%; /* 25.02px */
+
+}
+.landing-header_container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    margin-bottom: 3rem;
+}
+.landing-header_container button{
+    font-size: 1.5rem;
+    padding: 1.2rem 2rem;
+    font-weight: 600;
+    border: 2px solid #0E3E6E;
+    border-radius: 7px;
+    background-color: #fff;
+font-family: 'Quicksand';
+
+    color: #0E3E6E;
+    transition: all 0.4s;
+}
+.landing-header_container button:hover{
+    cursor: pointer;
+background-color: #0E3E6E;
+color: #fff;
+
+}.landing-header{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+}
+.image-slider {
+  
+  }
+  
+  .slider-image {
+    
+    /* object-fit: cover;  */
+    transition: opacity 1s ease; 
+  }
+  .type{
+    height: 6rem;
+    width: 0.4rem;
+    background-color: #333;
+  }
