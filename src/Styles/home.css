@@ -1,5 +1,5 @@
+ /* Dangrek Font */
  @import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap'); 
-/* @import '../../Styles/font.css'; */
 
 .landing-comment_main-container{
    display: inline-block;
@@ -7,8 +7,8 @@
 .landing-text_container{
     display: flex;
     background-color: #55C396;
-    padding: 1rem 2rem;
-    gap: 3rem;
+    padding: 30px 20px;
+    gap: 40px;
     color: #fff;
     border-radius: 10px;
     align-items: center;
@@ -20,67 +20,55 @@
 }
 .landing-text_container .text{
     color: var(--foundation-white-w-75, #FDFDFD);
-
-/* font-family: 'Dangrek'; */
-font-size: 2.5rem;
-font-style: normal;
-font-family:'Dangrek';
- /* 37.2px */
+    font-size: 34px;
+    font-style: normal;
+    font-family:'Dangrek';
 }
 .landing-text_container .comment{
     color: var(--foundation-white-w-75, #FDFDFD);
-    font-family: 'Quicksand';
-
-/* Body/small/Bold */
-font-size: 1.3rem;
-font-style: normal;
-font-weight: 400;
-line-height: 120%; /* 16.8px */
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
 }
 
 .landing-header_container .text-land{
     color: var(--foundation-black-b-300, #333);
-
-/* FHeading/H1 */
-font-family: 'Dangrek';
-font-size: 5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 120%; /* 84px */
+    font-family: 'Dangrek';
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 84px */
 }
 .landing-header-2{
     color: var(--foundation-black-b-300, #333);
-/* Body/Large/Regular */
-margin-top: -1rem;
-font-family: 'Quicksand';
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 139%; /* 25.02px */
-
+    margin-top: -1rem;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 139%; /* 25.02px */
 }
 .landing-header_container{
     display: flex;
     flex-direction: column;
-    /* gap: 2rem; */
+    gap: 27px;
     margin-bottom: 3rem;
+    padding-top: 3rem;
 }
 .landing-header_container button{
-    font-size: 1.5rem;
-    padding: 1.2rem 2rem;
+    width: 168px;
+    height: 44px;
     font-weight: 600;
     border: 2px solid #0E3E6E;
     border-radius: 7px;
     background-color: #fff;
-font-family: 'Quicksand';
-
     color: #0E3E6E;
     transition: all 0.4s;
-}
+} 
 .landing-header_container button:hover{
     cursor: pointer;
-background-color: #0E3E6E;
-color: #fff;
+    background-color: #0E3E6E;
+    color: #fff;
 
 }.landing-header{
     display: flex;
@@ -88,40 +76,28 @@ color: #fff;
     align-items: center;
     gap: 1rem;
 }
-.image-slider {
-  position: relative;
-
-  }
-  .slider-background{
-    /* position: absolute; */
+.slider-background{
     z-index: -10;
   }
-
-  
-  .slider-image {
+.slider-image {
     position: absolute;
-    
-    /* object-fit: cover;  */
     transition: opacity 1s ease; 
-  }
-  .type{
+}
+.type{
     height: 7rem;
     width: 0.2rem;
     background-color: #333;
     transition: opacity 2s;
     animation: blink infinite  1s ;
     /* animation-timing-function: steps(40, end) */
-  }
+}
 
-
-
-  @keyframes blink{
-
+@keyframes blink{
     0%{
         opacity: 0;
     }
-    
+
     100%{
         opacity: 1;
     }
-  }
+}

@@ -1,28 +1,29 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-
 import Image from 'next/image'
-import LandingImage1 from '../Images/landingImage1.png'
-import LandingImage2 from '../Images/landingImage2.png'
-import LandingImage3 from '../Images/landingImage3.png'
-import './landing.css'
+import '@/Styles/home.css'
 import Transition from '@/app/Transition'
-import ground1 from '../images/background1.png'
-import ground2 from '../images/background2.png'
-import ground3 from '../images/background3.png'
-const ImgeComponent = () => {
-    const images=[LandingImage1,LandingImage2,LandingImage3]
-    const background:any[] = [ground1, ground2, ground3]
-const [opacity, setOpacity] = useState(1)
-    const[image, setimage] = useState(0)
-    const [back, setBackground] = useState(0)
 
+//Assets
+import LandingImage2 from '../../public/images/assets/landingImage2.png'
+import LandingImage1 from '../../public/images/assets/landingImage1.png'
+import LandingImage3 from '../../public/images/assets/landingImage3.png'
+import ground1 from '../../public/images/assets/background1.png'
+import ground2 from '../../public/images/assets/background2.png'
+import ground3 from '../../public/images/assets/background3.png'
+
+function ImageComponent(){
+    const images = [LandingImage1, LandingImage2, LandingImage3]
+    const background:any[] = [ground1, ground2, ground3]
+    const [opacity, setOpacity] = useState(1)
+    const [image, setimage] = useState(0)
+    const [back, setBackground] = useState(0)
     
     useEffect(() => {
         const interval = setInterval(() => {
        
-          setOpacity(() =>0);
+          setOpacity(() => 0);
           
           setTimeout(() => {
             setimage((prevIndex) => (prevIndex + 1) % images.length);
@@ -33,6 +34,7 @@ const [opacity, setOpacity] = useState(1)
     
         return () => clearInterval(interval);
       }, []);
+      
     useEffect(() => {
         const interval = setInterval(() => {
        
@@ -50,11 +52,11 @@ const [opacity, setOpacity] = useState(1)
 
     
   return (
-    <div className='image-slider display'>
-        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='landing'height={500} width={550} />
-        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='landing'height={650} width={650}/>
+    <div className='image-slider'>
+        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='Home Image' width={550} quality={100} placeholder='blur'/>
+        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='Home Image Background' width={650} quality={100} placeholder='blur'/>
     </div>
   )
 }
 
-export default Transition(ImgeComponent)
+export default Transition(ImageComponent)

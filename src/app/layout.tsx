@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Inter, Quicksand } from 'next/font/google'
+import NavBar from '@/Components/NavBar'
 
-const inter = Inter({ subsets: ['latin'] })
+const quicksand = Quicksand({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Cybtracy',
@@ -16,8 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
-      <body className={inter.className}>{children}</body>
+      <body className={quicksand.className}>
+        <NavBar />
+        <div className='h-24 w-full'></div>
+        {children}
+      </body>
     </html>
   )
 }

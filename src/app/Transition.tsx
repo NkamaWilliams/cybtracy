@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const Transition = (Component:any) => {
+export default function Transition (Component:React.FC){
   return () => (
     <motion.div
       className="box"
@@ -18,4 +18,3 @@ const Transition = (Component:any) => {
   );
 };
 
-export default Transition;

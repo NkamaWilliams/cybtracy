@@ -1,0 +1,16 @@
+nav > ul {
+    width: 532px;
+    height: 48px;
+    gap: 60px;
+    color: #565656;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav > ul > li > button {
+    width: 121.75px;
+    height: 46px;
+    border-radius: 7px;
+    background-color: #0E3E6E;
+    color: #FFFFFF;
+}

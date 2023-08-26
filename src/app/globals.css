@@ -1,26 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-/* @import './Styles/font.css'; */
-@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Quicksand:wght@300;400;500;600;700&display=swap'); 
-
-html{
-  font-size: 100%;
+:root{
+  background-color: #FDFDFD;
 }
+
 main{
   display: flex;
   justify-content: center;
-  height: 100vh;
+}
+
+.cursor{
+  font-weight: 100; /* Adjust the thickness */
 }
 
 .landing{
   width: 87vw;
-  padding-top: 4rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-  /* gap: 8rem; */
 }
 .main-landing-1{
   width: 30vw;
