@@ -11,7 +11,7 @@ export default function NavBar() {
                 </Link>
             <ul className="flex flex-row items-center justify-between">
                 <li><Link href='/about'>About</Link></li>
-                <li><Link href='/get-involved'>Get Involved</Link></li>
+                <li><Link href='/get-involved/donation'>Get Involved</Link></li>
                 <li><Link href='/contact'>Contact</Link></li>
                 <li><button>Donate</button></li>
             </ul>
