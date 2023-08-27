@@ -80,12 +80,6 @@ p{
     flex: wrap;
 }
 
-@media (min-width: 1441px) {
-    .main{
-        padding: 30px 0;
-    }
-}
-
 @media (max-width: 1100px) {
     .main{
         display: block;
@@ -112,16 +106,16 @@ p{
         width: 151px;
     }
 
-    .main{
-        padding: 30px 15px;
-    }
-
     .icon{
         width: 35px;
     }
 
     .icon-container{
         width: 60px;
+    }
+
+    .main{
+        padding: 30px 3rem;
     }
 }
 
@@ -134,7 +128,7 @@ p{
     .cards{
         padding: 0 5px;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .card{
@@ -150,10 +144,6 @@ p{
         width: 111px;
     }
 
-    .main{
-        padding: 30px 0;
-    }
-
     .text{
         padding: 0 15px;
     }
@@ -164,5 +154,9 @@ p{
 
     .icon-container{
         width: 60px;
+    }
+
+    .main{
+        padding: 30px 5px;
     }
 }
