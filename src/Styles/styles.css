@@ -1,3 +1,22 @@
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    height: 96px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    width: 176px;
+    height: 48px;
+}
+
 nav > ul {
     width: 532px;
     height: 48px;
@@ -5,6 +24,11 @@ nav > ul {
     color: #565656;
     font-size: 16px;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
 }
 
 nav > ul > li > button {
@@ -13,4 +37,14 @@ nav > ul > li > button {
     border-radius: 7px;
     background-color: #0E3E6E;
     color: #FFFFFF;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #565656;
+}
+
+.navbar{
+    height: 80px;
+    width: 100vw;
 }
