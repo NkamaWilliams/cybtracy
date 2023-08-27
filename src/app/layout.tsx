@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className}>
         <NavBar />
-        <div className='h-24 w-full'></div>
+        <div className='navbar'></div>
         {children}
       </body>
     </html>
