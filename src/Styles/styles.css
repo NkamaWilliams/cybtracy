@@ -294,3 +294,69 @@ section{
     gap: 24px;
     padding: 15px 10px;
 }
+
+#hamburger{
+    display: none;
+}
+#hamburger-absolute{
+    display: none;
+}
+#menu-logo{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px){
+    nav > ul {
+        display: none;
+    }
+    #nav {
+        height: 100vh;
+        width: 100vw;
+        background-color: #FDFDFD;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #nav > ul {
+        width: 50vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav > ul > li > a {
+        font-size: 22px;
+    }
+    #menu-logo{
+        display: block;
+    }
+    #hamburger{
+        display: block;
+        z-index: 100;
+        cursor: pointer;
+    }
+    #hamburger-absolute {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: block;
+    }
+    .landing-header_container .text-land {
+        font-size: 50px;
+    }
+}

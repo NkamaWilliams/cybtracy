@@ -21,3 +21,16 @@ main{
 .main-landing-1{
   width: 30vw;
 }
+
+@media (max-width: 768px){
+  main{
+    height: 220vh;
+  }
+  .landing{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .landing-header_container{
+    width: 80vw;
+  }
+}

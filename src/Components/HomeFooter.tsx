@@ -21,7 +21,7 @@ export default function HomeFooter(){
                 <ul>
                     <li><Image src={EmailIcon} alt='Email Icon'/><span>Cybtracy@gmail.com</span></li>
                     <li><Image src={PhoneIcon} alt='Email Icon'/><span>+234 800 000 0000</span></li>
-                    <li><Image src={MapIcon} alt='Email Icon'/><span>124, Amadu Bello way, UNILAG, Lagos, Nigeria</span></li>
+                    <li><Image src={MapIcon} alt='Email Icon'/><span>124, Amadu Bello way, UNILAG, Lagos, Nigeria.</span></li>
                 </ul>
                 <div className='btn-group-col'>
                     <button className='secondary-btn'>Donate</button>
