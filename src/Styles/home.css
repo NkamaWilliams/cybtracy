@@ -55,16 +55,6 @@
     margin-bottom: 3rem;
     padding-top: 3rem;
 }
-.landing-header_container button{
-    width: 168px;
-    height: 44px;
-    font-weight: 600;
-    border: 2px solid #0E3E6E;
-    border-radius: 7px;
-    background-color: #fff;
-    color: #0E3E6E;
-    transition: all 0.4s;
-} 
 .landing-header_container button:hover{
     cursor: pointer;
     background-color: #0E3E6E;
@@ -78,6 +68,7 @@
 }
 .slider-background{
     z-index: -10;
+    position: relative;
   }
 .slider-image {
     position: absolute;
@@ -91,6 +82,13 @@
     animation: blink infinite  1s ;
     /* animation-timing-function: steps(40, end) */
 }
+
+.primary-intro {
+    margin-top: 90px;
+    height: 272px;
+    width: 505px;
+}
+
 
 @keyframes blink{
     0%{
