@@ -2,6 +2,7 @@
 
 import React from 'react';
 import '@/Styles/home.css';
+import '@/Styles/styles.css';
 import { Typewriter } from 'react-simple-typewriter';
 
 export default function Intro(){
@@ -23,7 +24,7 @@ export default function Intro(){
       </div>
       <h2 className="landing-header-2">Promoting functional literacy through basic digital literacy.</h2>
       <div>
-        <button>Partner with us</button>
+        <button className='primary-btn'>Partner with us</button>
       </div>
     </div>
   );

@@ -1,18 +1,15 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-:root{
+html {
+  overflow-x: hidden;
+}
+body {
   background-color: #FDFDFD;
+  width: 100vw;
 }
 
 main{
   display: flex;
   justify-content: center;
-}
-
-.cursor{
-  font-weight: 100; /* Adjust the thickness */
+  height: 110vh;
 }
 
 .landing{
@@ -23,4 +20,17 @@ main{
 }
 .main-landing-1{
   width: 30vw;
+}
+
+@media (max-width: 768px){
+  main{
+    height: 220vh;
+  }
+  .landing{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .landing-header_container{
+    width: 80vw;
+  }
 }
