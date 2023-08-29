@@ -10,6 +10,8 @@ p, span, li{
 
 .header, .grid-container{
     padding: 20px 6rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header{
@@ -19,6 +21,8 @@ p, span, li{
 
 .header h2{
     font-size: 54px;
+    line-height: 64.8px;
+    margin: 30px 0;
 }
 
 .grid h3{
@@ -78,22 +82,26 @@ p, span, li{
 }
 
 @media (max-width: 1000px){
-    
+    .grid-container{
+        padding: 30px 1rem;
+    }
 }
 
 @media (max-width: 768px){
     .header, .grid-container{
         padding: 30px 3rem;
+        margin: 20px 0;
     }
 
     .header h2{
         font-size: 31px;
         margin: 20px 0;
+        line-height: 37.2px;
     }
     
     .grid-container{
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: repeat(9, 1fr);
         background-position: 150px center;
         background-size: contain;
     }
@@ -107,8 +115,8 @@ p, span, li{
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 426px){
     .header, .grid-container{
-        padding: 0px 15px;
+        padding: 0px 10px;
     }
 }

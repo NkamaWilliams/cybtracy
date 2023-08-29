@@ -26,9 +26,9 @@ export default function Donation(){
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 
                     <h4 className={dangrek.className}>Account Details</h4>
-                    <h5 className={dangrek.className}>Bank <span className="value"></span></h5>
-                    <h5 className={dangrek.className}>Acct Number <span className="value"></span></h5>
-                    <h5 className={dangrek.className}>Acct Name <span className="value">GT Bank</span></h5>
+                    <h5 className={dangrek.className}>Bank <span className="value"> : Guaranty Trust Bank</span></h5>
+                    <h5 className={dangrek.className}>Acct Number <span className="value"> : 123456789</span></h5>
+                    <h5 className={dangrek.className}>Acct Name <span className="value">: Cybtracy</span></h5>
 
                     <p>Thank you for choosing to be a game changer</p><br/>
                     <p>Kindly contact us via email or message for enquiry or receipt for confirmation of payment</p>

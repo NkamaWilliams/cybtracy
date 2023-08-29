@@ -10,6 +10,15 @@ p{
     font-size: 18px;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    line-height: 84px;
+}
+
 .icon{
     width: 45px;
 }
@@ -33,6 +42,7 @@ p{
     border: 12px solid rgba(240, 240, 240, 1);
     border-radius: 12px;
     font-size: 25.3px;
+    box-sizing: border-box;
 }
 
 .card-active{
@@ -90,6 +100,16 @@ p{
     }
 }
 
+@media (max-width:826px){
+    .card{
+        width: 160px;
+    }
+
+    .card-active{
+        width: 170px;
+    }
+}
+
 @media (max-width: 768px){
     .text h1{
         font-size: 60px;
@@ -115,11 +135,12 @@ p{
     }
 
     .main{
-        padding: 30px 3rem;
+        padding: 0 3rem;
+        margin: 20px auto;
     }
 }
 
-@media (max-width: 470px){
+@media (max-width: 500px){
     .text h1{
         font-size: 40px;
         width: 100%;
