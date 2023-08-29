@@ -2,7 +2,7 @@
 
 import React from "react"
 import Image from "next/image"
-import "@/Styles/get-involved.css"
+import "@/Styles/get-involved-header.css"
 import { useState } from "react"
 import { Dangrek } from "next/font/google"
 import Link from "next/link"

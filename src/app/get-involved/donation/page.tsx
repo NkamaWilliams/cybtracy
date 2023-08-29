@@ -1,7 +1,7 @@
 'use client'
 
 import GetInvolved from "@/Components/GetInvolved"
-import '@/Styles/donation.css'
+import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
 
 const dangrek = Dangrek({subsets: ["latin"], weight: "400"})
