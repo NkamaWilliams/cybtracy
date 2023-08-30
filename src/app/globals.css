@@ -1,9 +1,11 @@
 html {
   overflow-x: hidden;
 }
+
 body {
   background-color: #FDFDFD;
   width: 100vw;
+  margin: 0;
 }
 
 main{

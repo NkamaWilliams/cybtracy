@@ -1,6 +1,5 @@
-'use client'
-
 import GetInvolved from "@/Components/GetInvolved"
+import HomeFooter from "@/Components/HomeFooter"
 import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
 
@@ -8,9 +7,9 @@ const dangrek = Dangrek({subsets: ["latin"], weight: "400"})
 
 export default function Donation(){
     return(
-        <div className="donation">
+        <div>
             <GetInvolved title="Donation"/>
-
+            
             <div className="header">
                 <h2 className={dangrek.className}>
                     Thank you for choosing to donate to us
@@ -55,6 +54,10 @@ export default function Donation(){
                 </div>
                 
             </div>
+
+            <footer>
+                <HomeFooter/>
+            </footer>
         </div>
     )
 }

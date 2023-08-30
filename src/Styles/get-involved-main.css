@@ -18,18 +18,20 @@ p, span, li, label, input, select, option, textarea{
 .header, .grid-container, form{
     padding: 20px 6rem;
     width: 100%;
+    max-width: 1440px;
+    margin: auto;
     box-sizing: border-box;
 }
 
 .header{
-    max-width: 950px;
-    margin: 60px 0;
+    margin: 60px auto;
 }
 
 .header h2{
     font-size: 54px;
     line-height: 64.8px;
     margin: 30px 0;
+    max-width: 950px;
 }
 
 .header p{
@@ -170,6 +172,11 @@ textarea{
 
 .btn-1:hover{
     cursor: pointer;
+}
+
+footer{
+    box-shadow: 0 -2px 5px lightgray;
+    
 }
 
 @media (max-width: 1000px){

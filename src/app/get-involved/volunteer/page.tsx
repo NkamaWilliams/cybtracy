@@ -1,4 +1,5 @@
 import GetInvolved from "@/Components/GetInvolved"
+import HomeFooter from "@/Components/HomeFooter"
 import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
 
@@ -80,6 +81,10 @@ export default function Volunteer(){
 
                 <button className="btn-1" type="submit">Submit Form</button>
             </form>
+
+            <footer>
+                <HomeFooter/>
+            </footer>
         </div>
     )
 }
