@@ -1,0 +1,184 @@
+.relative{
+    position: relative;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1{
+    line-height: 84px;
+}
+
+.icon{
+    width: 45px;
+}
+
+.icon-container{
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgba(85, 195, 150, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 180px;
+    aspect-ratio: 0.85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid rgba(240, 240, 240, 1);
+    border-radius: 12px;
+    font-size: 25.3px;
+    box-sizing: border-box;
+}
+
+.card-active{
+    width: 200px;
+    aspect-ratio: 0.83;
+    background-color: rgba(14, 62, 110, 1);
+    border-color: rgba(9, 38, 67, 1)
+}
+
+.card p{
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.card-active p{
+    color: white;
+}
+
+.cards{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.text h1{
+    font-size: 70px;
+    font-weight: 400;
+    width: 300px;
+}
+
+.main{
+    max-width: 1440px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 6rem;
+    flex: wrap;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+    .main{
+        display: block;
+    }
+
+    .main > div{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:826px){
+    .card{
+        width: 160px;
+    }
+
+    .card-active{
+        width: 170px;
+    }
+}
+
+@media (max-width: 768px){
+    .text h1{
+        font-size: 60px;
+        max-width: 300px;
+    }
+
+    .card{
+        width: 140px;
+        border-width: 6px;
+        font-size: 13px;
+    }
+
+    .card-active{
+        width: 151px;
+    }
+
+    .icon{
+        width: 35px;
+    }
+
+    .icon-container{
+        width: 60px;
+    }
+
+    .main{
+        padding: 0 3rem;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 500px){
+    .text h1{
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .cards{
+        padding: 0 5px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card{
+        width: 100px;
+        border-width: 6px;
+        margin: 20px 5px;
+    }
+
+    .card p{
+        font-size: 15px;}
+
+    .card-active{
+        width: 111px;
+    }
+
+    .text{
+        padding: 0 15px;
+    }
+
+    .icon{
+        width: 35px;
+    }
+
+    .icon-container{
+        width: 60px;
+    }
+
+    .main{
+        padding: 30px 5px;
+    }
+}
