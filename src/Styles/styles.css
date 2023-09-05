@@ -57,11 +57,11 @@ nav > ul > li > a {
 
 section{
     position: relative;
-    width: 85vw;
+    /* width: 85vw; */
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
-    margin-inline: 7.5vw;
+    /* margin-inline: 7.5vw; */
     gap: 10rem;
     margin-bottom: 10rem;
 }
@@ -235,13 +235,16 @@ section{
 }
 
 .home-footer {
-    height: 367px;
+    /* height: 367px; */
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 250px;
+    gap: 200px;
     color: #565656;
 }
 
@@ -269,6 +272,9 @@ section{
     gap: 20px;
 }
 
+.footer-elements{
+    gap: 8rem;
+}
 .footer-elements > ul {
     list-style-type: none;
     display: flex;
@@ -281,7 +287,7 @@ section{
 .footer-elements > ul > li {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 40px;
     align-items: center;
     line-height: 150%;
     cursor: pointer;

@@ -26,7 +26,7 @@ export default function NavBar() {
             </Link>
                 { showMenu && <Image src={MenuLogo} alt="logo" quality={100} width={215} id='menu-logo'/> }
                 <ul id={showMenu ? 'nav-list' : ''}>
-                    <li><Link href='/about'>About</Link></li>
+                    <li><Link href='/about/about'>About</Link></li>
                     <li><Link href='/get-involved/donation'>Get Involved</Link></li>
                     <li><Link href='/contact'>Contact</Link></li>
                     <li><button>Donate</button></li>

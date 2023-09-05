@@ -3,7 +3,7 @@
 import React from 'react';
 import '@/Styles/home.css';
 import '@/Styles/styles.css';
-import { Typewriter } from 'react-simple-typewriter';
+import { Typewriter, Cursor } from 'react-simple-typewriter';
 
 export default function Intro(){
   return (
@@ -13,14 +13,14 @@ export default function Intro(){
         <Typewriter
             words={['Education', 'Empowerment', 'Sustainability']}
             loop={true}
-            cursor
+            cursor = {false}
             cursorStyle={<span>|</span>}
             typeSpeed={100}
-            deleteSpeed={60}
-            delaySpeed={1000}
+            deleteSpeed={70}
+            delaySpeed={1200}
           />
         </h1>
-        {/* <Cursor /> */}
+        <div className="" style={{fontSize:'7rem', marginLeft:'-1.2rem'}}> <Cursor/></div>
       </div>
       <h2 className="landing-header-2">Promoting functional literacy through basic digital literacy.</h2>
       <div>
