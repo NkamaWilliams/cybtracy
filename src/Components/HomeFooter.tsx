@@ -3,25 +3,28 @@ import EmailIcon from '../../public/images/icons/email-icon.png'
 import PhoneIcon from '../../public/images/icons/phone-icon.png'
 import MapIcon from '../../public/images/icons/map-icon.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HomeFooter(){
     return (
         <footer className="home-footer">
-            <Image src={FooterLogo} alt='Cybtracy Footer Image' width={220} quality={100}/>
+            <div className='home-footer-logo'>
+                <Image src={FooterLogo} alt='Cybtracy Footer Image' width={220} quality={100}/>
+            </div>
             <div className='footer-elements'>
                 <div className='quick-links'>
                     <h3>QUICK LINKS</h3>
                     <div className='quick-links-container'>
-                        <span>About Us</span>
-                        <span>The Team</span>
-                        <span>Get Involved</span>
-                        <span>Contact Us</span>
+                        <Link href='/about/about'>About Us</Link>
+                        <Link href='/about/team'>The Team</Link>
+                        <Link href='/get-involved/partnership'>Get Involved</Link>
+                        <Link href='contact'>Contact Us</Link>
                     </div>
                 </div>
                 <ul>
-                    <li><Image src={EmailIcon} alt='Email Icon'/><span>Cybtracy@gmail.com</span></li>
+                    <li><Image src={EmailIcon} alt='Email Icon'/><Link href='mailto:Cybtracy@gmail.com'>Cybtracy@gmail.com</Link></li>
                     <li><Image src={PhoneIcon} alt='Email Icon'/><span>+234 800 000 0000</span></li>
-                    <li><Image src={MapIcon} alt='Email Icon'/><span>124, Amadu Bello way, UNILAG, Lagos, Nigeria.</span></li>
+                    <li><Image src={MapIcon} alt='Email Icon'/><span>124, Ahmadu Bello way, UNILAG, Lagos, Nigeria.</span></li>
                 </ul>
                 <div className='btn-group-col'>
                     <button className='secondary-btn'>Donate</button>

@@ -76,7 +76,12 @@ section{
     color: #0E3E6E;
     transition: all 0.4s;
     cursor: pointer;
-} 
+}
+
+.primary-btn:hover{
+    background-color: #0E3E6E;
+    color: #fff;
+}
 
 .secondary-btn {
     width: 168px;
@@ -84,6 +89,8 @@ section{
     border-radius: 7px;
     background-color: #0E3E6E;
     color: #FFFFFF;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 
@@ -108,6 +115,19 @@ section{
     font-size: 18px;
     font-weight: 400;
     line-height: 139%;
+}
+
+.workstream {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.workstream-intro {
+    margin-top: 0 !important;
+    width: 505px;
 }
 
 .workstream-img {
@@ -143,7 +163,7 @@ section{
 }
 
 .workstream-card {
-    width: 552px;
+    width: 500px;
     height: 150px;
     border-radius: 15px;
     padding: 5px 20px 10px;
@@ -238,17 +258,25 @@ section{
     /* height: 367px; */
     padding-bottom: 3rem;
     padding-top: 2rem;
-    
+    padding-inline: 5rem;
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-between;
     color: #565656;
 }
 
+.home-footer-logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-elements {
+    width: 70%;
     display: flex;
     flex-direction: row;
     gap: 50px;
@@ -259,11 +287,13 @@ section{
 .quick-links {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .quick-links > h3 {
     color: #565656;
-    font-weight: 700;
+    font-weight: 900;
+    font-size: 14px;
 }
 
 .quick-links-container {
@@ -273,7 +303,10 @@ section{
 }
 
 .footer-elements{
-    gap: 8rem;
+    gap: 6rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 .footer-elements > ul {
     list-style-type: none;
@@ -285,16 +318,18 @@ section{
 }
 
 .footer-elements > ul > li {
+    font-size: 16px !important;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 15px;
     align-items: center;
-    line-height: 150%;
+    height: 35px;
     cursor: pointer;
 }
 
 .btn-group-col {
     width: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
