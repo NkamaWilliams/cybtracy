@@ -6,8 +6,8 @@ import WorkstreamBg from '../../public/images/assets/workstream-bg.png'
 
 export default function Workstream(){
     return (
-        <section>
-            <div className='primary-intro'>
+        <section className='workstream'>
+            <div className='workstream-intro'>
                 <h1 className='header'>Our Program Workstream</h1>
                 <p className='header-text'>We seek to impact students with forward-thinking digital skills to a point where they can come up with solutions to problems on their own, and communicate it digitally.</p>
                 <div className='btn-group'>
