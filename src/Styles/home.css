@@ -69,10 +69,14 @@
 .slider-background{
     z-index: -10;
     position: relative;
+    width: 650px;
+    height: 610px;
   }
 .slider-image {
     position: absolute;
     transition: opacity 1s ease; 
+    width: 550px;
+    height: 520px;
 }
 .type{
     height: 7rem;
@@ -96,5 +100,21 @@
 
     100%{
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px){
+    .primary-intro {
+        height: fit-content;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .slider-image {
+        width: 360px;
+        height: 325px;
+    }
+    .slider-background {
+        width: 440px;
+        height: 415px;
     }
 }

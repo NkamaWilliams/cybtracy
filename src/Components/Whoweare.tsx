@@ -6,7 +6,7 @@ import WhoweareBg from '../../public/images/assets/whoweare-bg.png'
 
 export default function Whoweare() {
     return (
-        <section style={{marginTop:'8rem', width:'85vw',marginLeft:'2rem'}}>
+        <section className='whoweare-section'>
             <div>
                 <Image src={WhoweareImg} className='slider-image' alt='Who we are' width={570} quality={100} />
                 <Image src={WhoweareBg} className='slider-background whoweare-bg' alt='Background' width={560} quality={100} />
