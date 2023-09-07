@@ -7,7 +7,22 @@ import '@/Styles/contact.css'
 
 const dangrek = Dangrek({subsets: ["latin"], weight: "400"})
 export default function Contact() {
+    const validateEmail = () => {
+        const email = document.querySelectorAll("input")[1]
+        const button = document.querySelector("button")
+        const error = document.getElementById("error-msg")
+        const pattern = /\w+@\w+\.\w+/
 
+        if (pattern.test(email.value)){
+            document.getElementById("submit-btn")?.removeAttribute("disabled")
+            error?.setAttribute("style", "display:none")
+        }
+        else{
+            document.getElementById("submit-btn")?.setAttribute("disabled", "true")
+            error?.setAttribute("style", "display:block")
+        }
+        console.log("Validate!")
+    }
     return (
         <div className="contact">
             <div className="main">
@@ -47,7 +62,7 @@ export default function Contact() {
                 </div>
 
                 <div className="form-container">
-                    <form method="post">
+                    <form>
                         <h1>Get in Touch</h1>
                         <p>We would love to hear from you.</p>
 
@@ -58,8 +73,8 @@ export default function Contact() {
 
                         <div className="input-group">
                             <label htmlFor="email">Email *</label>
-                            <input id="email" type="text" name="email" required/>
-                            <p className="error-msg">Wrong Email format</p>
+                            <input onInput={validateEmail} id="email" type="text" name="email" required/>
+                            <p id="error-msg">Wrong Email format</p>
                         </div>
 
                         <div className="input-group">
@@ -67,7 +82,7 @@ export default function Contact() {
                             <textarea id="message" name="message" required/>
                         </div>
 
-                        <button type="submit">Send message</button>
+                        <button id="submit-btn" type="submit">Send message</button>
                     </form>
                 </div>
             </div>
