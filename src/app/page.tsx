@@ -1,3 +1,4 @@
+'use client'
 import { Fragment } from 'react'
 
 //Components
@@ -8,10 +9,11 @@ import Whoweare from '@/Components/Whoweare'
 import Workstream from '@/Components/Workstream'
 import GetInvolvedSection from '@/Components/GetInvolvedSection'
 import HomeFooter from '@/Components/HomeFooter'
-
+import { AnimatePresence } from 'framer-motion'
 export default function Home() {
   return (
-        <Fragment>
+     <AnimatePresence mode = 'wait'>
+         <Fragment>
           <main>
             <div className="landing">
               <div className="main-landing-1">
@@ -28,5 +30,6 @@ export default function Home() {
           <GetInvolvedSection/>
           <HomeFooter/>
         </Fragment>
+     </AnimatePresence>
   )
 }
