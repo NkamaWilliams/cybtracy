@@ -149,7 +149,6 @@ line-height: 139%; /* 25.02px */
     background-color: #092643;
     padding: 5rem;
     margin-top: 10rem;
-    padding-top: 8rem;
 }
 
 
@@ -215,14 +214,14 @@ line-height: 120%; /* 26.4px */
     display: flex;
     gap: 4rem;
     align-items: center;
-    
 }
 
 .get-involved-container{
     display: flex;
-    gap: 10rem;
+    gap: 6rem;
     margin-left: 4rem;
     align-items: center;
+    justify-content: center;
 }
 
 @media(max-width:1300px){
@@ -271,8 +270,10 @@ line-height: 120%; /* 26.4px */
     }
     .donate {
         display: flex;
+        width: 100%;
         gap: 2rem;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .images {

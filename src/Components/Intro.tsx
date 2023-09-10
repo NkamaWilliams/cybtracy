@@ -20,7 +20,7 @@ export default function Intro(){
             delaySpeed={1200}
           />
         </h1>
-        <div className="" style={{fontSize:'7rem', marginLeft:'-1.2rem'}}> <Cursor/></div>
+        <div className="" style={{fontSize:'6rem', marginLeft:'-1.2rem'}}> <Cursor/></div>
       </div>
       <h2 className="landing-header-2">Promoting functional literacy through basic digital literacy.</h2>
       <div>
