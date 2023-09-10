@@ -53,8 +53,8 @@ function ImageComponent(){
     
   return (
     <div className='image-slider'>
-        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='Home Image' width={550} quality={100} placeholder='blur'/>
-        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='Home Image Background' width={650} quality={100} placeholder='blur'/>
+        <Image className='slider-image' style={{opacity:opacity}} src={images[image]} alt='Home Image' quality={100} placeholder='blur'/>
+        <Image className='Slider-image slider-background' style={{opacity:opacity}} src={background[image] } alt='Home Image Background' quality={100} placeholder='blur'/>
     </div>
   )
 }

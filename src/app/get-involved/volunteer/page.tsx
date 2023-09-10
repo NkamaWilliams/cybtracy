@@ -22,26 +22,26 @@ export default function Volunteer(){
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="first_name">First Name *</label>
-                        <input id="first_name" title="First name" name="first_name" type="text"/>
+                        <input id="first_name" title="First name" name="first_name" type="text" required/>
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="last_name">Last Name *</label>
-                        <input id="last_name" title="Last name" name="last_name" type="text"/>
+                        <input id="last_name" title="Last name" name="last_name" type="text" required/>
                     </div>
                 </div>
 
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="email">Email *</label>
-                        <input id="email" title="Email" name="email" type="email"/>
+                        <input id="email" title="Email" name="email" type="email" required/>
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="phone_number">Phone Number *</label>
                         <div className="side-info">
                             <p>234 |</p>
-                            <input id="phone_number" type="text" title="Phone number" name="phone_number" pattern="[0-9]{10, 11}"/>
+                            <input id="phone_number" type="text" title="Phone number" name="phone_number" pattern="[0-9]{10, 11}" required/>
                         </div>
                     </div>
                 </div>
@@ -49,19 +49,19 @@ export default function Volunteer(){
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="location">Location *</label>
-                        <input id="location" title="Location" name="location" type="text"/>
+                        <input id="location" title="Location" name="location" type="text" required/>
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="dob">Date of Birth *</label>
-                        <input id="dob" type="date" name="dob" title="Date of Birth"/>
+                        <input id="dob" type="date" name="dob" title="Date of Birth" required/>
                     </div>
                 </div>
 
                     <div className="group">
                         <div className="input-group">
                             <label htmlFor="department">Status *</label>
-                            <select id="department" name="department">
+                            <select id="department" name="department" required>
                                 <option>~Select Department~</option>
                             </select>
                         </div>
@@ -70,12 +70,12 @@ export default function Volunteer(){
                     <div className="group">
                         <div className="input-group">
                             <label htmlFor="reason">Why would you like to Volunteer with Cybtracy * </label>
-                            <textarea id="reason" name="reason" title="Reason for volunteering"/>
+                            <textarea id="reason" name="reason" title="Reason for volunteering" required/>
                         </div>
 
                         <div className="input-group">
                             <label htmlFor="expectations">What are your expectations from Cybtracy * </label>
-                            <textarea id="expectations" name="expectations" title="Expectations from us"/>
+                            <textarea id="expectations" name="expectations" title="Expectations from us" required/>
                         </div>
                     </div>
 

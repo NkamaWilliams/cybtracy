@@ -2,7 +2,6 @@ import Image from 'next/image'
 import '../../../Styles/Team.css'
 import {BiGift} from 'react-icons/bi'
 import {IoIosPeople} from 'react-icons/io'
-
 import {IoEarth} from 'react-icons/io5'
 import TeamImage from '../../../../public/images/png/Teamimage1.png'
 import rect from '../../../../public/images/png/rect.png'
@@ -10,6 +9,8 @@ import face1 from '../../../../public/images/png/face1.png'
 import face2 from '../../../../public/images/png/face2.png'
 import face3 from '../../../../public/images/png/face3.png'
 import HomeFooter from '@/Components/HomeFooter'
+
+
 export default function  Team(){
     return (
         <div className="team">
@@ -187,30 +188,27 @@ export default function  Team(){
                         <p className="get-header">Get invloved</p>
                         <p className="get-text">We are better with your support. Become a part of the family!</p>
                         <p className="get-button">
-                            <button>contact us</button>
+                            <button>Contact Us</button>
                         </p>
                     </div>
-    
-                    <div className="donations">
-                        <div className="donate">
-                            <div className="don">
-                                <div className="svg-con">
-                              <BiGift/>
-                                </div>
-                                <div className="svg-text">Donation</div>
+                    <div className="donate">
+                        <div className="don">
+                            <div className="svg-con">
+                            <BiGift/>
                             </div>
-                            <div className="don">
-                                <div className="svg-con">
-                              <IoEarth/>
-                                </div>
-                                <div className="svg-text">Partnership</div>
+                            <div className="svg-text">Donation</div>
+                        </div>
+                        <div className="don">
+                            <div className="svg-con">
+                            <IoEarth/>
                             </div>
-                            <div className="don">
-                                <div className="svg-con">
-                              <IoIosPeople/>
-                                </div>
-                                <div className="svg-text">volunteer</div>
+                            <div className="svg-text">Partnership</div>
+                        </div>
+                        <div className="don">
+                            <div className="svg-con">
+                            <IoIosPeople/>
                             </div>
+                            <div className="svg-text">Volunteer</div>
                         </div>
                     </div>
                 </div>
