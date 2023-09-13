@@ -1,10 +1,14 @@
+'use client'
+
 import Image from 'next/image'
 import '../../../Styles/About.css'
 import Link from 'next/link'
 import Picture from '../../../../public/images/png/About1.png'
 import HomeFooter from '@/Components/HomeFooter'
+import Transition from '@/app/Transition'
 
-export default function About() {
+const  About =() =>{
+    
     return (
         <div className='about-2'> 
             <div className="about-container">
@@ -94,3 +98,4 @@ export default function About() {
         </div>
       )
 }
+export default Transition(About)
