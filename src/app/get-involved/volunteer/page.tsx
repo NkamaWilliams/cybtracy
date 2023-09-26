@@ -2,6 +2,7 @@ import GetInvolved from "@/Components/GetInvolved"
 import HomeFooter from "@/Components/HomeFooter"
 import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
+import PhoneInput from "@/Components/PhoneInput"
 
 const dangrek = Dangrek({subsets: ["latin"], weight: "400"})
 
@@ -38,11 +39,20 @@ export default function Volunteer(){
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor="phone_number">Phone Number *</label>
+                        {/* <label htmlFor="phone_number">Phone Number *</label>
                         <div className="side-info">
-                            <p>234 |</p>
+                            <div className="dropdown">
+                                <p onClick={() => setOpen(!open)} className="selected">{code} </p>
+                                {open && <div className="dropdown-content">
+                                    <div onClick={() => {handleCodeSelect(1234)}} className="item">
+                                        <p className="code">1234</p>
+                                        <p className="country">Nigeria</p>
+                                    </div>
+                                </div>}
+                            </div>
                             <input id="phone_number" type="text" title="Phone number" name="phone_number" pattern="[0-9]{10, 11}" required/>
-                        </div>
+                        </div> */}
+                        <PhoneInput />
                     </div>
                 </div>
 
@@ -64,6 +74,11 @@ export default function Volunteer(){
                             <select id="department" name="department" required>
                                 <option>~Select Department~</option>
                             </select>
+                        </div>
+
+                        <div className="input-group">
+                            <label htmlFor="picture">Volunteer picture *</label>
+                            <input id="picture" name="picture" type="file" accept="image/png, image/jpg, image/heif, image/heic, image/tiff, image/gif, image/webp" required/>
                         </div>
                     </div>
 
