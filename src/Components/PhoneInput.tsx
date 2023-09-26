@@ -2,7 +2,7 @@
 import { useState } from "react"
 export default function PhoneInput(){
     const [open, setOpen] = useState(false)
-    const [code, setCode] = useState<string|number>("+1")
+    const [code, setCode] = useState<string|number>(1)
     const handleCodeSelect = (num: number|string) => {
         setCode(num)
         setOpen(false)
@@ -12,9 +12,9 @@ export default function PhoneInput(){
             <label htmlFor="phone_number">Phone Number *</label>
             <div className="side-info">
                 <div className="dropdown">
-                    <p onClick={() => setOpen(!open)} className="selected">{code} </p>
+                    <p onClick={() => setOpen(!open)} className="selected">+{code} </p>
                     {open && <div className="dropdown-content">
-                        <div onClick={() => {handleCodeSelect(1234)}} className="item">
+                        <div onClick={() => {handleCodeSelect(+234)}} className="item">
                             <p className="code">+234</p>
                             <p className="country">Nigeria</p>
                         </div>
