@@ -2,6 +2,7 @@
 
 import GetInvolved from "../../../Components/GetInvolved"
 import HomeFooter from "@/Components/HomeFooter"
+import PhoneInput from "@/Components/PhoneInput"
 import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
 
@@ -40,11 +41,7 @@ export default function Partnership(){
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor="phone_number">Phone Number *</label>
-                        <div className="side-info">
-                            <p>234 |</p>
-                            <input id="phone_number" type="text" title="Phone number" name="phone_number" pattern="[0-9]{10, 11}" required/>
-                        </div>
+                        <PhoneInput/>
                     </div>
                 </div>
 
