@@ -1,4 +1,4 @@
-# Cybtracy 
+# Cybtracy
 
 Welcome to the repository for the official Cybtracy website! This repository contains the source code for Cybtracy's website, which is designed to provide basic digital literacy skills to young learners.
 
@@ -54,4 +54,3 @@ Open your browser and visit http://localhost:3000 to view the website.
 3. Push your changes to your forked repository.
 4. Create a pull request from your branch to the main repository's main branch.
 5. Provide a clear title and description for your pull request, explaining the changes you've made.
-
