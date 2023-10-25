@@ -2,6 +2,7 @@
 
 import GetInvolved from "../../../Components/GetInvolved"
 import HomeFooter from "@/Components/HomeFooter"
+import PhoneInput from "@/Components/PhoneInput"
 import '@/Styles/get-involved-main.css'
 import { Dangrek } from "next/font/google"
 
@@ -24,39 +25,35 @@ export default function Partnership(){
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="first_name">First Name *</label>
-                        <input id="first_name" title="First name" name="first_name" type="text"/>
+                        <input id="first_name" title="First name" name="first_name" type="text" required/>
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="last_name">Last Name *</label>
-                        <input id="last_name" title="Last name" name="last_name" type="text"/>
+                        <input id="last_name" title="Last name" name="last_name" type="text" required/>
                     </div>
                 </div>
 
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="email">Email *</label>
-                        <input id="email" title="Email" name="email" type="email"/>
+                        <input id="email" title="Email" name="email" type="email" required/>
                     </div>
 
                     <div className="input-group">
-                        <label htmlFor="phone_number">Phone Number *</label>
-                        <div className="side-info">
-                            <p>234 |</p>
-                            <input id="phone_number" type="text" title="Phone number" name="phone_number" pattern="[0-9]{10, 11}"/>
-                        </div>
+                        <PhoneInput/>
                     </div>
                 </div>
 
                 <div className="group">
                     <div className="input-group">
                         <label htmlFor="location">Location *</label>
-                        <input id="location" title="Location" name="location" type="text"/>
+                        <input id="location" title="Location" name="location" type="text" required/>
                     </div>
 
                     <div className="input-group">
                         <label htmlFor="status">Status *</label>
-                        <select id="status" name="status">
+                        <select id="status" name="status" required>
                             <option>~Select Individual/Organization~</option>
                         </select>
                     </div>
@@ -65,7 +62,7 @@ export default function Partnership(){
                     <div className="group">
                         <div className="input-group">
                             <label htmlFor="details">Partnership Details *</label>
-                            <textarea id="details" name="details" title="details"/>
+                            <textarea id="details" name="details" title="details" required/>
                         </div>
                     </div>
 
