@@ -80,7 +80,12 @@ export default function Partnership() {
 
           <div className="input-group">
             <label htmlFor="status">Status *</label>
-            <select id="status" name="status" required>
+            <select
+              id="status"
+              name="status"
+              required
+              style={{ cursor: "pointer" }}
+            >
               <option>~Select Individual/Organization~</option>
               <option>Individual</option>
               <option>Organization</option>

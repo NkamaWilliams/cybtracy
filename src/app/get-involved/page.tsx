@@ -1,5 +1,3 @@
-export default function GetInvolved(){
-    return (
-        <></>
-    )
+export default function GetInvolved() {
+  return <></>;
 }
