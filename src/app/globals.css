@@ -3,36 +3,36 @@ html {
 }
 
 body {
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
   width: 100vw;
   margin: 0;
 }
 
-main{
+main {
   display: flex;
   justify-content: center;
   height: 110vh;
 }
 
-.landing{
+.landing {
   width: 87vw;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
-.main-landing-1{
+.main-landing-1 {
   width: 30vw;
 }
 
-@media (max-width: 768px){
-  main{
+@media (max-width: 768px) {
+  main {
     height: fit-content;
   }
-  .landing{
+  .landing {
     flex-direction: column;
     gap: 2rem;
   }
-  .landing-header_container{
+  .landing-header_container {
     width: 80vw;
   }
 }

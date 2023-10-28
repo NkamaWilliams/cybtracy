@@ -1,6 +1,7 @@
-"use client"
-import { useState } from "react"
-import codes from "./CountryCodes.json"
+"use client";
+import { useState } from "react";
+import codes from "./CountryCodes.json";
+import "@/Styles/styles.css";
 
 const country_code = codes.codes
 export default function PhoneInput(){
