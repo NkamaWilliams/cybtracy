@@ -5,8 +5,8 @@ import codes from "./CountryCodes.json"
 const country_code = codes.codes
 export default function PhoneInput(){
     const [open, setOpen] = useState(false)
-    const [code, setCode] = useState<string|number>("+00")
-    const handleCodeSelect = (num: number|string) => {
+    const [code, setCode] = useState<string>("")
+    const handleCodeSelect = (num: string) => {
         setCode(num)
         setOpen(false)
     }
@@ -15,9 +15,21 @@ export default function PhoneInput(){
             <label htmlFor="phone_number">Phone Number *</label>
             <div className="side-info">
                 <div className="dropdown">
-                    <p onClick={() => setOpen(!open)} className="selected">{code} </p>
+                    {/* <p onClick={() => setOpen(!open)} className="selected">{code} </p> */}
+                    <div className="selected" onClick={() => setOpen(!open)}>
+                        <input
+                        id="country-code" 
+                        type="text" 
+                        title="Country code" 
+                        name="country_code" 
+                        pattern="[\+0-9]+" 
+                        value={code} 
+                        onInput={(e:any) => setCode(e.target.value)}
+                        placeholder="+000"
+                        required/>
+                    </div>
                     {open && <div className="dropdown-content">
-                        {country_code.map(country => 
+                        {country_code.filter((country) => {return country.dial_code.includes(code)}).map(country => 
                             <div onClick={() => {handleCodeSelect(country.dial_code)}} className="item">
                                 <p className="code">{country.dial_code}</p>
                                 <p className="country">{country.name}</p>
